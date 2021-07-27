@@ -191,12 +191,7 @@ if __name__ == '__main__':
     loss, accuracy = model.evaluate(test_ds)
     print("Accuracy", accuracy)
 
-    # Generate predictions (probabilities -- the output of the last layer)
-    # on new data using `predict`
-    print("Generate predictions for 3 samples")
-    predictions = model.predict(val_ds[:3])
-    print("predictions shape:", predictions.shape)
-    print("predictions", predictions)
+
 
 
 """
