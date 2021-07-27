@@ -4,18 +4,29 @@ Topic detection from urls
 
 Packages you need to install: 
 pandas
+
 tensorflow
+
 bs4
+
 numpy
+
 scikit-learn
+
 time
+
 csv
 
 commands to install them:
+
 pip install pandas
+
 pin install -U scikit-learn
+
 pip install bs4
+
 pip install --upgrade tensorflow
+
 if you face issues with TF installation, follow https://www.tensorflow.org/install/pip
 
 Input:
