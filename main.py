@@ -159,7 +159,7 @@ if __name__ == '__main__':
     feature_columns=[]
     # numeric col
     for header in features:
-        if header in ["bündchen","condé",'grigòlo','gül']: #stray words that are not definted in TF scope, let's eliminate them
+        if header in ["bündchen","condé",'grigòlo','gül','kármán']: #stray words that are not definted in TF scope, let's eliminate them
             print(header)
         else:
             feature_columns.append(feature_column.numeric_column(header))
