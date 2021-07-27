@@ -2,22 +2,10 @@
 This program scrapes text from a list of urls (in csv) and creates TFIDF features from every term and puts it into a dataframe. It also creates the 'target' variable from the these features. We then use TF to create a basic network to classify. 
 Topic detection from urls 
 
-Packages you need to install: 
-pandas
+**Packages you need to install: **
+pandas, tensorflow, bs4, numpy, scikit-learn, time, csv
 
-tensorflow
-
-bs4
-
-numpy
-
-scikit-learn
-
-time
-
-csv
-
-commands to install them:
+**commands to install them:**
 
 pip install pandas
 
@@ -103,12 +91,12 @@ With an approach of 783 train examples & 88 test examples, we have obtained pret
 
 Copied from TF blog is: 
 """
-Key Point: You will typically see best results with deep learning with much larger and more complex datasets. 
+**Key Point:** You will typically see best results with deep learning with much larger and more complex datasets. 
 When working with a small dataset like this one, we recommend using a decision tree or random forest as a strong baseline. The goal of this tutorial is not to train an accurate model, but to demonstrate the mechanics of working with structured data, so you have code to use as a starting point when working with your own datasets in the future.
 
 """
 
-How to improve:
+**How to improve:**
 1. More data. Think 10,000+ documents.
 2. Some supervision. Even 20-30% can improve performance - we can use the above approach as well to get more supervision
 3. We can use raw text in addition to the TFIDF frequecies as addiitonal features
